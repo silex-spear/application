@@ -1,0 +1,21 @@
+{
+    "name": "silex-spear/application",
+    "type": "library",
+    "authors": [{
+        "name": "Claude LE BRIS",
+        "email": "claude.lebris@gmail.com"
+    }],
+    "license": [
+        "MIT"
+    ],
+    "require": {
+        "php": ">=5.4",
+        "silex/silex": "~1.2",
+        "puzzle/configuration": "~1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spear\\Silex\\Application\\": "src/"
+        }
+    }
+}
