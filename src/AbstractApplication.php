@@ -46,6 +46,11 @@ abstract class AbstractApplication extends \Silex\Application
 
     private function initializeSecurity()
     {
+        if(PHP_SAPI === 'cli')
+        {
+            return;
+        }
+
         $this->register(new SecurityServiceProvider());
         $this['security.firewalls'] = array(
             'admin' => array(
