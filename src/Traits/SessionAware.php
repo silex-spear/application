@@ -1,6 +1,6 @@
 <?php
 
-namespace Spear\Silex\Application\Traits
+namespace Spear\Silex\Application\Traits;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 
